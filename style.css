@@ -1,0 +1,189 @@
+body{
+    margin: 0px;
+}
+body{
+    margin:0px
+}
+main{
+    margin-left:20px;
+    margin-right:20px;
+}
+h1{
+    text-align:center;
+}
+.navbar{
+    background-color: rgb(1, 1, 165);
+    overflow:hidden;
+}
+.navbar ul{
+    list-style-type: none ; 
+    padding: 0px;
+    margin: 0px;
+}
+.navbar  a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    display:block;
+    text-align:center;
+}
+.navbar  a:hover{
+    background-color: darkblue ;
+}
+.navbar li{
+    float:left;
+}
+
+.gallery-container {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap: 20px;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.gallery{
+    display: inline-block;
+    border: 1px solid darkmagenta(0, 0%, 60%);
+    margin:10px;
+    width:500px;
+    height: auto;
+}
+.gallery .description{
+    padding: 10px;
+    text-align:center;
+}
+.gallery:hover{
+    border: 1px solid darkmagenta (0,0%,20%);
+}
+.gallery img{
+    width:100%;
+    height: auto;
+    overflow: auto;
+    text-align:center;
+    object-fit:cover;
+    
+}
+.gallery{
+    width: 20vw;
+    height:auto;
+    margin: 10px;
+}
+/*.gallery .button-link{
+    width:30%;
+    margin: 10px 1.66%;
+    float: center;
+    box-sizing: border-box;
+}
+
+/*.gallery .last-image {
+    width: 50%;
+    margin: 10px auto;
+    float: center;
+    display: block;
+}*/
+
+/*.dropdown{
+    display: inline-block;
+}
+
+.dropdown button{
+    background-color: blue;
+    color:white;
+    padding: 10px 15px;
+    border: none;
+    cursor:pointer;
+}
+.dropdown a{
+    display: block;
+    collor:white;
+    text-decoration:none;
+    padding: 10px 15px;
+}
+.dropdown content{
+    display:none
+    position:absolute;
+    background-color:crimson;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px darkred;
+}
+.dropdown:hover .content{
+    display:block;
+}
+.dropdown:hover button{
+    background-color:darkblue
+}*/
+body{
+    position: relative;
+    color: black;
+    margin: 0;
+    height: 100vh;
+    overflow: auto;
+
+}
+body::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(Background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.5;
+    z-index: -1;
+}
+.button-link{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(41, 202, 255);
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold; 
+    display: inline-block;
+    transition: background-color 0.3 ease;
+}
+.button-link:hover{
+    background-color: rgb(73, 115, 253);
+}
+
+@font-face{
+    font-family: 'OpenDyslexic';
+    src: url('./fonts/OpenDyslexic-Regular.woff') format("woff"),
+         url('./fonts/OpenDyslexic-Regular.woff2') format("woff2");
+}
+body {
+    font-family:'OpenDyslexic',Arial,sans-serif !important;
+}
+/*h1{
+    font-family: verdana, arial;
+}
+p{
+    font-family: "lucida console", "courier new";
+    font-size: 1em;
+    font-weight:normal;
+    font-style:normal;
+}*/
+.content-container{
+    display:flex;
+    align-items: flex-start;
+    gap:20px;
+    padding: 20px;
+}
+.gallery{
+    flex: 1;
+}
+.text-section{
+    flex: 2;
+}
+.gallery img {
+    width:100%;
+    max-width: 1000px;
+    height:auto;
+}
